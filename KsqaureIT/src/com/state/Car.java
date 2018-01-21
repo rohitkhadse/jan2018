@@ -8,12 +8,25 @@ public class Car {
 	private int miles;
 	private boolean engineStart;
 	private float fuel;
+	private String carYear;
 	
 	public Car(int miles, boolean engineStart, float fuel) {
 		this.miles = miles;
 		this.engineStart = engineStart;
 		this.fuel = fuel;
 	}
+	
+	
+
+	public Car(int miles, boolean engineStart, float fuel, String carYear) {
+		super();
+		this.miles = miles;
+		this.engineStart = engineStart;
+		this.fuel = fuel;
+		this.carYear = carYear;
+	}
+
+
 
 	//Behavior
 	public void drive(){
@@ -54,6 +67,14 @@ public class Car {
 		return "Car [Miles Driven=" + miles + ", Engine Start=" + engineStart + ", Fuel Remaining=" + fuel + "]"+"\n";
 	}
 	
+	public String getCarYear() {
+		return carYear;
+	}
+
+	public void setCarYear(String carYear) {
+		this.carYear = carYear;
+	}
+
 	//setter and getter
 	public int getMiles() {
 		return miles;
