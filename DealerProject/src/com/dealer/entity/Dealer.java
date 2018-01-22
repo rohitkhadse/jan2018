@@ -1,5 +1,6 @@
 package com.dealer.entity;
 
+//Dealer
 public class Dealer {
 	private int id;
 	private String name;
