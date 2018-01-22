@@ -1,0 +1,10 @@
+package com.dealer.entity;
+
+public class Order {
+	private int id;
+	private String status;
+	private Customer customer;
+	private Dealer dealer;
+	private Shop shop;
+	private Car car;
+}
