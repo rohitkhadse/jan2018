@@ -25,6 +25,7 @@ public class TestCar {
 		
 	}
 
+	//Accept ArrayList
 	private static void searchArrayList(List<Car> al, int i) {
 		for(Car c : al){
 			if(i==c.getId()){
@@ -35,13 +36,15 @@ public class TestCar {
 		
 	}
 
+	//Accept Map
 	private static void searchMap(Map<Integer, Car> hmap, int i) {
+		if(hmap.containsKey(i)){
+			System.out.println(hmap.get(i));
+			System.out.println("Time After searching in Hashmap = "+ System.currentTimeMillis() +"ms");
+		}
 		for(Map.Entry<Integer,Car> m:hmap.entrySet()){
 			Car c = m.getValue();
-			if(i == m.getKey()){
-				System.out.println(c);
-				System.out.println("Time After searching in Hashmap = "+ System.currentTimeMillis() +"ms");
-			}
+			
 		}
 	}
 
