@@ -55,10 +55,10 @@ public class TestCar {
 		}
 		System.out.println("===========================");
 		
-//		Arrays.sort(array, new YearComparator());
-//		for(Car c:array){
-//			System.out.println(c);
-//		}
+		Collections.sort(list, new YearComparator());
+		for(Car c:list){
+			System.out.println(c);
+		}
 		
 		
 
