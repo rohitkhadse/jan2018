@@ -12,15 +12,16 @@ public class TestCar {
 		List<Car> al = new ArrayList<Car>();
 
 		Map<Integer,Car> hmap = new HashMap<Integer,Car>();
-		for(int i=0;i<100000;i++){
+		for(int i=0;i<1000009;i++){
 			Car c = new Car(i,i+"a",2000+i,i+"sedan",i*100);
 			hmap.put(c.getId(),c);
 			al.add(c);
 		}
 		
 		System.out.println("Time before searching ="+ System.currentTimeMillis() +"ms");
-		searchArrayList(al,99945);
-		searchMap(hmap,9999);
+		searchMap(hmap,999451);
+		searchArrayList(al,999451);
+		
 		
 	}
 
