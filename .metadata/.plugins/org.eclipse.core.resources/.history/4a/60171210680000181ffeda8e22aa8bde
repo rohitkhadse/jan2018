@@ -1,0 +1,8 @@
+package com.threads;
+
+public class ExecuteTransaction {
+	
+	public int transaction(Customer c,int amount){
+		return c.getBalance() - amount;
+	}
+}

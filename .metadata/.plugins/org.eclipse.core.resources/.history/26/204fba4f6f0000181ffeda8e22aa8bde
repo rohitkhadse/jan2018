@@ -1,0 +1,38 @@
+package com.threads;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TestThread{
+
+	public static void main(String[] args) {
+		List<Customer> al = new ArrayList<Customer>();
+		
+		
+//		for(int i=0;i<5;i++){
+//			Customer c = new Customer(i,1000,"Customer"+i);
+//			al.add(c);
+//		}
+		
+		
+		
+		
+		
+//		int updatedBalance = et.transaction(al.get(2), 50);
+//		Customer c =al.get(2);
+//		c.setBalance(updatedBalance);
+//		System.out.println(c);
+		
+		
+		for(int i=0;i<10000;i++){
+			Customer c = new Customer(i,1000,"Customer"+i,new ExecuteTransaction());
+			al.add(c);
+		}
+		
+		for(Customer c:al){
+			c.start();
+		}
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.threads;
+
+public class ExecuteTransaction extends Thread{
+	Customer c = new Customer();
+	int amount;
+	
+	public int transaction(Customer c,int amount){
+		this.c=c;
+		this.amount=amount;
+		return c.getBalance() - amount;
+	}
+	
+	public void run(){
+		transaction(c,amount);
+	}
+}

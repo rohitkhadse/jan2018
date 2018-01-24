@@ -1,0 +1,27 @@
+package com.threads;
+
+public class ExecuteTransaction extends Thread{
+	
+	
+//	public void transaction(Customer c,int amount){
+//		this.c=c;
+//		this.amount=amount;
+//		int newBalance = c.getBalance() - amount;
+//		c.setBalance(newBalance);
+//	}
+	
+	public void setCustomer(){
+		
+	}
+
+	public int processPayment(int balance) {
+		// TODO Auto-generated method stub
+		return balance+10;
+	}
+	
+	public void run(){  
+		processPayment(100); 
+	}  
+	
+
+}
