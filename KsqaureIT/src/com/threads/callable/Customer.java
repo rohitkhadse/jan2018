@@ -1,10 +1,10 @@
-package com.threads;
+package com.threads.callable;
 
 public class Customer {
 	private int accNO;
 	private int balance;
 	private String name;
-	public static boolean flag=false;
+	public  boolean flag=false;
 	
 	public Customer(){
 		

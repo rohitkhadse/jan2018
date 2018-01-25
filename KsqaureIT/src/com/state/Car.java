@@ -130,7 +130,6 @@ public class Car {
 				default:
 					print("Please enter proper input");
 			}
-			
 		}
 	}
 
