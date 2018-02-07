@@ -2,7 +2,11 @@ package com.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,6 +19,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.dealer.connection.ExcuteQuery;
+import com.entity.Car;
+
 
 /**
  * Servlet implementation class MainServlet
@@ -43,40 +49,56 @@ public class MainServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		PrintWriter out = response.getWriter();  
+		PrintWriter out = response.getWriter();
 		
+		List<Car> carList = new ArrayList<Car>();
 		
-		if("loginform".equalsIgnoreCase(request.getParameter("login"))){
-			String username = request.getParameter("userName");
+			String username = request.getParameter("username");
 			String password = request.getParameter("password");
 			boolean flag = ExcuteQuery.validate(username, password);
 			if (flag) {
+				try {
+					ResultSet rs= ExcuteQuery.displayCar();
+					while(rs.next()){
 				
+						carList.add(new Car(rs.getString(1),
+								rs.getString(2),
+								rs.getString(3),
+								rs.getString(4),
+								rs.getInt(5),
+								rs.getInt(6),
+								rs.getInt(7)));
+					}
+					
+				}  catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (ClassNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				for(Car car: carList){
+					
+					 out.println(car.getId()+" "+car.getType()+car.getYear()+car.getColor()+car.getModelCompany()+
+							 car.getModelName()+car.getModelPrice());
+				 }
 				HttpSession session = request.getSession();
-				session.setAttribute("user",username);
-				response.sendRedirect("display.jsp");
+				request.setAttribute("list",carList);
+				session.setAttribute("list",carList);
+				RequestDispatcher rd = request.getRequestDispatcher("display.jsp");
+				rd.forward(request, response);
+				
+//				HttpSession session = request.getSession();
+//				session.setAttribute("list",carList);
+//				//response.sendRedirect("display.jsp");
 				
 			} else {
 				out.print("Sorry UserName or Password Error!");
 				logger.error("Username "+username+" or passwoord "+password+" is wrong");
 				
 			}
-		}
-		if("registerform".equalsIgnoreCase(request.getParameter("register"))){
-			String username = request.getParameter("userName");
-			String password = request.getParameter("password");
-
-			try {
-				if(ExcuteQuery.addUser(username, password)==1)
-					out.print("Successfully Register");
-			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+		
+		
 		
 		//doGet(request, response);
 	}
