@@ -71,10 +71,8 @@ public class MainServlet extends HttpServlet {
 					}
 					
 				}  catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (ClassNotFoundException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				for(Car car: carList){
@@ -85,6 +83,7 @@ public class MainServlet extends HttpServlet {
 				HttpSession session = request.getSession();
 				request.setAttribute("list",carList);
 				session.setAttribute("list",carList);
+				response.setStatus(HttpServletResponse.SC_OK);
 				RequestDispatcher rd = request.getRequestDispatcher("display.jsp");
 				rd.forward(request, response);
 				
@@ -94,6 +93,7 @@ public class MainServlet extends HttpServlet {
 				
 			} else {
 				out.print("Sorry UserName or Password Error!");
+				response.sendError(401, "Sorry UserName or Password Error!");
 				logger.error("Username "+username+" or passwoord "+password+" is wrong");
 				
 			}

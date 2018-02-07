@@ -20,7 +20,7 @@ public class Car {
 		this.id = id;
 
 	}
-	public Car(){}
+	//public Car(){}
 
 	public String getModelName() {
 		return modelName;
