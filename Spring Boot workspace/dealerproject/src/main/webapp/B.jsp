@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="com.entity.User"%>
 <%@page import="com.entity.Car"%>
 <%@page import="java.util.ArrayList"%>
 <html>
@@ -6,7 +7,9 @@
 <meta charset="ISO-8859-1">
 <title>Display Cars</title></head>
 <body>
-<h2>Welcome :</h2>
+<h2>Welcome :<% User u=(User)session.getAttribute("u");%>
+<%= u.getUsername() %>
+</h2>
 
 <%
 //  ArrayList<Car> list = (ArrayList<Car>)request.getAttribute("list");
@@ -16,9 +19,21 @@
 //  }
  
  ArrayList<Car> sessionlist = (ArrayList<Car>)session.getAttribute("list");
- System.out.print(sessionlist);
+ out.println("Data from Session attribute");
  for(Car car: sessionlist){
-	 out.println(car.getId()+" "+car.getType()+""+car.getYear()+""+car.getColor()+""+car.getModelCompany()+""+car.getModelName()+""+car.getModelPrice());
+	 %>
+	 <table style = "width:50%" border="1">
+	 <tr>
+	 <td><%out.print(car.getId());%></td>
+	 <td><%out.print(car.getType());%></td>
+	 <td><%out.print(car.getYear());%></td>
+	 <td><%out.print(car.getColor());%></td>
+	 <td><%out.print(car.getModelCompany());%></td>
+	 <td><%out.print(car.getModelName());%></td>
+	 <td><%out.print(car.getModelPrice());%></td>
+	 </tr>
+	 </table>
+<%	 //out.println(car.getId()+" "+car.getType()+""+car.getYear()+""+car.getColor()+""+car.getModelCompany()+""+car.getModelName()+""+car.getModelPrice());
  }
 %>
 
