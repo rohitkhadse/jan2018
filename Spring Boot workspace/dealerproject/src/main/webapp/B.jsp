@@ -10,7 +10,7 @@
 <h2>Welcome :<% User u=(User)session.getAttribute("u");%>
 <%= u.getUsername() %>
 </h2>
-
+<%-- 
 <%
 //  ArrayList<Car> list = (ArrayList<Car>)request.getAttribute("list");
 //  System.out.print(list);
@@ -36,6 +36,6 @@
 <%	 //out.println(car.getId()+" "+car.getType()+""+car.getYear()+""+car.getColor()+""+car.getModelCompany()+""+car.getModelName()+""+car.getModelPrice());
  }
 %>
-
+ --%>
 </body>
 </html>

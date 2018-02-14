@@ -20,6 +20,8 @@ import org.apache.logging.log4j.Logger;
 
 import com.dealer.connection.ExcuteQuery;
 import com.entity.Car;
+import com.entity.User;
+import com.hibernate.DealerService;
 
 
 /**
@@ -50,46 +52,37 @@ public class MainServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
-		
+		HttpSession session = request.getSession();
 		List<Car> carList = new ArrayList<Car>();
 		
-			String username = request.getParameter("username");
-			String password = request.getParameter("password");
-			boolean flag = ExcuteQuery.validate(username, password);
+		User user = (User) session.getAttribute("u");
+		String username = user.getUsername();
+		String password = user.getPassword();
+		
+//			String username = request.getParameter("username");
+//			String password = request.getParameter("password");
+			
+			boolean flag = DealerService.validate(username, password);
 			if (flag) {
-				try {
-					ResultSet rs= ExcuteQuery.displayCar();
-					while(rs.next()){
 				
-						carList.add(new Car(rs.getString(1),
-								rs.getString(2),
-								rs.getString(3),
-								rs.getString(4),
-								rs.getInt(5),
-								rs.getInt(6),
-								rs.getInt(7)));
-					}
-					
-				}  catch (SQLException e) {
-					e.printStackTrace();
+				try {
+					carList = DealerService.displayCar();
 				} catch (ClassNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				for(Car car: carList){
-					
-					 out.println(car.getId()+" "+car.getType()+car.getYear()+car.getColor()+car.getModelCompany()+
-							 car.getModelName()+car.getModelPrice());
-				 }
-				HttpSession session = request.getSession();
+				
 				request.setAttribute("list",carList);
 				session.setAttribute("list",carList);
+				String msg = "login successfull";
+				request.setAttribute("msg", msg);
 				response.setStatus(HttpServletResponse.SC_OK);
 				RequestDispatcher rd = request.getRequestDispatcher("display.jsp");
 				rd.forward(request, response);
 				
-//				HttpSession session = request.getSession();
-//				session.setAttribute("list",carList);
-//				//response.sendRedirect("display.jsp");
 				
 			} else {
 				out.print("Sorry UserName or Password Error!");

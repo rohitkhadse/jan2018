@@ -2,6 +2,12 @@
 <section name="Workbench">
 	<item value="true" key="ProjectSelectionDialog.show_all"/>
 	<item value="/Users/User/Documents/remoteTiger" key="org.eclipse.jdt.ui.lastextjar"/>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="renameSubpackages"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
+		<item value="false" key="updateTextualMatches"/>
+	</section>
 	<section name="ProblemSeveritiesConfigurationBlock">
 		<item value="false" key="expanded2"/>
 		<item value="false" key="expanded1"/>
@@ -62,6 +68,10 @@
 		<item value="641" key="DIALOG_HEIGHT"/>
 		<item value="350" key="DIALOG_X_ORIGIN"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
 	</section>
 	<section name="JavaBuildConfigurationBlock">
 		<item value="false" key="expanded2"/>
