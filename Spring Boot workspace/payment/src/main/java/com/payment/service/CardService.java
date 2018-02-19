@@ -20,7 +20,7 @@ public class CardService {
 	private CardDao cardDAO = new CardDaoImpl();
 
 	@GET
-	@Path("/validate/{cardnum}/{pin}")
+	@Path("/validate/{cardnum}/{pin}")  //don't pass actual card info to get method,this has security flaw 
 	//@Produces("application/xml")
 	@Produces(MediaType.APPLICATION_XML)
 	public Cards validatecard(@PathParam("cardnum") int cardnum,
@@ -34,13 +34,6 @@ public class CardService {
 			
 	}
 	
-	/*@GET
-	@Path("/test")
-	@Produces(MediaType.APPLICATION_XML)
-	public String test(){
-		System.out.println("hello");
-		return "test successful";
-	}*/
 	
 	@PUT
 	@Path("/pay/{cardnum}/{pin}/{fund}")
