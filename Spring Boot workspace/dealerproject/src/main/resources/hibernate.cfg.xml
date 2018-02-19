@@ -29,9 +29,10 @@
       <property name="show_sql">true</property>
       
       <!-- List of XML mapping files -->
-      <mapping resource = "user.hbm.xml"/>
-      <mapping resource = "car.hbm.xml"/>
-      <mapping resource = "model.hbm.xml"/>
+      <mapping class="com.entity.User"/>
+      <mapping class="com.entity.Car"/>
+      <mapping class="com.entity.Model"/>
+      
       
    </session-factory>
 

@@ -1,1 +1,8 @@
+com/config/SpringConfig.class
 com/controller/CarHandler.class
+com/entity/User.class
+com/entity/Model.class
+com/hibernate/HibernateUtility.class
+com/hibernate/DealerService.class
+com/config/ServletInitializer.class
+com/entity/Car.class

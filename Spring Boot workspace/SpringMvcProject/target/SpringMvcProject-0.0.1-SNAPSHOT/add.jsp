@@ -9,7 +9,7 @@
 <body>
  <form action="http://localhost:8080/SpringMvcProject/car/add.do" method="post">
   Car Name :<input type="text" name="carname" value="carname"><br>
-      
+  
   <input type="submit" name="submitButton" value="login">
   </form>
 
