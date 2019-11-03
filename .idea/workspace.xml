@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74fa1aff-b873-4d7c-9428-eeea56f22626" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Spring Boot workspace/factoryspring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring Boot workspace/factoryspring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factoryproject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/factoryproject/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interview19/src/com/datastructure/LinkedListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview19/bin/com/practice/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview19/bin/com/practice/StackImplementation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview19/bin/com/string/ReverseString.class" beforeDir="false" afterPath="$PROJECT_DIR$/Interview19/bin/com/string/ReverseString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview19/src/com/practice/StackImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview19/src/com/datastructure/StackImplementation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Spring Boot workspace/cardealer/target/classes/" />
@@ -41,91 +46,23 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview19/src/com/practice/StackImplementation.java">
+        <entry file="file://$PROJECT_DIR$/Interview19/src/com/datastructure/LinkedListImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+            <state relative-caret-position="450">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#108#109#0" expanded="true" />
+                <element signature="e#139#140#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview19/src/com/someCodingChallenges/PrimeNumber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview19/src/com/string/ReverseString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/factoryproject/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Spring Boot workspace/factoryspring/pom.xml">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interviews/src/com/java8/StreamTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview19/src/com/string/SetOfCharacter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-158">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview19/src/com/string/DuplicateString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="e#302#318#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview19/src/com/string/NumericString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -150,6 +87,8 @@
         <option value="$PROJECT_DIR$/Interview19/src/com/string/ReverseString.java" />
         <option value="$PROJECT_DIR$/factoryproject/pom.xml" />
         <option value="$PROJECT_DIR$/Spring Boot workspace/factoryspring/pom.xml" />
+        <option value="$PROJECT_DIR$/Interview19/src/com/datastructure/LinkedListImplementation.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -170,11 +109,7 @@
           <expand>
             <path>
               <item name="jan2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="factoryproject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jan2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="factoryspring" type="462c0819:PsiDirectoryNode" />
+              <item name="Interview19" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -201,13 +136,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReverseString">
-    <configuration name="DuplicateString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.string.DuplicateString" />
+  <component name="RunManager" selected="Application.LinkedListImplementation">
+    <configuration name="LinkedListImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructure.LinkedListImplementation" />
       <module name="Interview19" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.string.*" />
+          <option name="PATTERN" value="com.datastructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,11 +177,11 @@
       </method>
     </configuration>
     <configuration name="StackImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.practice.StackImplementation" />
+      <option name="MAIN_CLASS_NAME" value="com.datastructure.StackImplementation" />
       <module name="Interview19" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.*" />
+          <option name="PATTERN" value="com.datastructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -269,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinkedListImplementation" />
         <item itemvalue="Application.ReverseString" />
         <item itemvalue="Application.TwoSum" />
         <item itemvalue="Application.StackImplementation" />
         <item itemvalue="Application.NumericString" />
-        <item itemvalue="Application.DuplicateString" />
       </list>
     </recent_temporary>
   </component>
@@ -292,6 +227,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="693" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536946" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -382,7 +318,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Interview19/src/com/practice/StackImplementation.java">
+    <entry file="file://$PROJECT_DIR$/Interview19/src/com/datastructure/StackImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
@@ -433,13 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Interview19/src/com/string/ReverseString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/factoryproject/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -449,8 +378,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Spring Boot workspace/factoryspring/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        <state relative-caret-position="198">
+          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview19/src/com/string/ReverseString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview19/src/com/datastructure/LinkedListImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>

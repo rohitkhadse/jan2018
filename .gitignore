@@ -2,3 +2,7 @@
 *.project
 *.classpath
 *.iml
+.idea/
+bin/
+.settings/
+workspace.xml
