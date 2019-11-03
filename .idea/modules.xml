@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DealerProject/DealerProject.iml" filepath="$PROJECT_DIR$/DealerProject/DealerProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interview19/Interview19.iml" filepath="$PROJECT_DIR$/Interview19/Interview19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interviews/Interviews.iml" filepath="$PROJECT_DIR$/Interviews/Interviews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KsqaureIT/KsqaureIT.iml" filepath="$PROJECT_DIR$/KsqaureIT/KsqaureIT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/Servers/Servers.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/Servers/Servers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/SpringMvcProject/SpringMvcProject.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/SpringMvcProject/SpringMvcProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/Test/Test.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/cardealer/cardealer.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/cardealer/cardealer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/courseapi/courseapi.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/courseapi/courseapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/customermicro/customermicro.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/customermicro/customermicro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/dealer/dealer.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/dealer/dealer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/dealermvc/dealermvc.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/dealermvc/dealermvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/dealerproject/dealerproject.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/dealerproject/dealerproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/dealerwebapps/dealerwebapps.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/dealerwebapps/dealerwebapps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/domino-rest/domino-rest.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/domino-rest/domino-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/factoryproject/factoryproject.iml" filepath="$PROJECT_DIR$/factoryproject/factoryproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/factoryspring/factoryspring.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/factoryspring/factoryspring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/jspproject/jspproject.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/jspproject/jspproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksqaureitmaven/ksqaureitmaven.iml" filepath="$PROJECT_DIR$/ksqaureitmaven/ksqaureitmaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/ms-dev-sample-master/ms-dev-sample.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/ms-dev-sample-master/ms-dev-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/ordermirco/ordermirco.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/ordermirco/ordermirco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/payment/payment.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/payment/payment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring Boot workspace/paymentsystem/paymentsystem.iml" filepath="$PROJECT_DIR$/Spring Boot workspace/paymentsystem/paymentsystem.iml" />
+    </modules>
+  </component>
+</project>

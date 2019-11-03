@@ -1,0 +1,6 @@
+com/domino/rest/BookSpringBootApp.class
+com/domino/service/BookService.class
+com/domino/dto/Book.class
+com/domino/repository/BookRepository.class
+com/domino/controller/BookController.class
+com/domino/repository/BookRepository$1.class

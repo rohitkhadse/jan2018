@@ -1,6 +1,8 @@
 package com.payment.service;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -30,16 +32,22 @@ public class CardService {
 		}
 		else{
 			return cardDAO.validate(cardnum, pin);
-		}
-			
+		}			
 	}
-	
 	
 	@PUT
 	@Path("/pay/{cardnum}/{pin}/{fund}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public String pay(@PathParam("cardnum")int cardnum,@PathParam("pin")String pin,@PathParam("fund")int fund){
 		return cardDAO.pay(cardnum,pin, fund);
+	}
+	
+	@POST
+	@Path("/card")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Cards paycard(Cards card){
+		return card;
 	}
 	
 }

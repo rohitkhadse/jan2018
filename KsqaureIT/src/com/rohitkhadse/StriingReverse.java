@@ -11,6 +11,17 @@ public class StriingReverse {
 			System.out.print(c[i]);
 		}
 		
+		System.out.println();
+		
+		StringBuffer sb = new StringBuffer("Mohit");
+		sb.reverse();
+		
+		System.out.println("String reverse by String buffer : "+sb.toString());
+		
+		StringBuilder sbuild = new StringBuilder("Rahul");
+		sbuild.reverse();
+		
+		System.out.println("String reverse by String builder : "+sbuild.toString());
 	}
 
 }
