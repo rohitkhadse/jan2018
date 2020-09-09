@@ -1,6 +1,7 @@
 package com.string;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -11,7 +12,7 @@ public class DuplicateString {
 		
 		String strArray [] = str.split(" ");
 		
-		Map<String,Integer> map = new TreeMap<String,Integer>();
+		Map<String,Integer> map = new LinkedHashMap<>();
 		for(String s : strArray){
 			if(map.containsKey(s)){
 				map.put(s, map.get(s)+1);
