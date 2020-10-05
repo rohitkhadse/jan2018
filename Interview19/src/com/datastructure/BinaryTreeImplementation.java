@@ -77,7 +77,6 @@ class BinaryTree{
         inOrder(root.right);
         System.out.print(root.data+ " ");
     }
-
 }
 
 public class BinaryTreeImplementation {
