@@ -1,14 +1,13 @@
 package com;
 
+import java.time.LocalDateTime;
 import java.util.HashSet;
 
 public class Test {
     public static void main(String[] args) {
-        HashSet<Employee> hashSet = new HashSet();
-        hashSet.add(new Employee(1,"Rohit"));
-        hashSet.add(new Employee(1,"Rohit"));
+        LocalDateTime localDateTime = LocalDateTime.now().minusDays(3);
 
-        hashSet.forEach(System.out::println);
+        System.out.println(localDateTime);
     }
 }
 

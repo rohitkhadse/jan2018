@@ -20,6 +20,7 @@ public class BubbleSort {
 
             for (int i = 0; i< unsortedArray.length-1;i++ ){
                 if (unsortedArray[i] > unsortedArray[i+1]){
+                    //swap
                     int temp = unsortedArray[i];
                     unsortedArray[i] = unsortedArray [i+1];
                     unsortedArray[i+1] = temp;

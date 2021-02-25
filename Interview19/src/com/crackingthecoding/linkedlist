@@ -1,0 +1,42 @@
+static Node InsertPos(Node headNode,
+                            int position, int data)
+        {
+            var head = headNode;
+            if (position < 1)
+                Console.WriteLine("Invalid position");
+
+            //if position is 1 then new node is
+            // set infornt of head node
+            //head node is changing.
+            if (position == 1)
+            {
+                var newNode = new Node(data);
+                newNode.nextNode = headNode;
+                head = newNode;
+            }
+            else
+            {
+                while (position-- != 0)
+                {
+                    if (position == 1)
+                    {
+                        // adding Node at required position
+                        Node newNode = GetNode(data);
+
+                        // Making the new Node to point to
+                        // the old Node at the same position
+                        newNode.nextNode = headNode.nextNode;
+
+                        // Replacing current with new Node
+                        // to the old Node to point to the new Node
+                        headNode.nextNode = newNode;
+                        break;
+                    }
+                    headNode = headNode.nextNode;
+                }
+                if (position != 1)
+                    Console.WriteLine("Position out of range");
+            }
+            return head;
+        }
+
